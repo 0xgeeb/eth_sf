@@ -674,10 +674,349 @@
         }
       }
     },
-    "src/ByteHasher.sol": {
+    "src/BytesLib.sol": {
+      "lastModificationDate": 1667681537441,
+      "contentHash": "35a3166fbb9f91b00496f478f27356e7",
+      "sourceName": "src/BytesLib.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.9",
+      "artifacts": {
+        "BytesLib": {
+          "0.8.16+commit.07a7930e.Linux.gcc": "BytesLib.sol/BytesLib.json"
+        }
+      }
+    },
+    "src/Context.sol": {
+      "lastModificationDate": 1667681680726,
+      "contentHash": "a2fa6306e8dd3e8097269cbfa212f1e6",
+      "sourceName": "src/Context.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.9",
+      "artifacts": {
+        "Context": {
+          "0.8.16+commit.07a7930e.Linux.gcc": "Context.sol/Context.json"
+        }
+      }
+    },
+    "src/GameVerifier.sol": {
+      "lastModificationDate": 1667682138720,
+      "contentHash": "0cba0ee6b2edbfca8dac9a374cf3e929",
+      "sourceName": "src/GameVerifier.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/BytesLib.sol",
+        "src/Context.sol",
+        "src/GenesisUtils.sol",
+        "src/ICircuitValidator.sol",
+        "src/IZKPVerifier.sol",
+        "src/Ownable.sol",
+        "src/ZKPVerifier.sol"
+      ],
+      "versionRequirement": "^0.8.9",
+      "artifacts": {
+        "GameVerifier": {
+          "0.8.16+commit.07a7930e.Linux.gcc": "GameVerifier.sol/GameVerifier.json"
+        }
+      }
+    },
+    "src/GenesisUtils.sol": {
+      "lastModificationDate": 1667681520756,
+      "contentHash": "7e85ebb30e3309d924d0423a56b5b59d",
+      "sourceName": "src/GenesisUtils.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/BytesLib.sol"
+      ],
+      "versionRequirement": "^0.8.9",
+      "artifacts": {
+        "GenesisUtils": {
+          "0.8.16+commit.07a7930e.Linux.gcc": "GenesisUtils.sol/GenesisUtils.json"
+        }
+      }
+    },
+    "src/ICircuitValidator.sol": {
+      "lastModificationDate": 1667681417101,
+      "contentHash": "e7611344a0048ccee55b7580cf1c5ad6",
+      "sourceName": "src/ICircuitValidator.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.9",
+      "artifacts": {
+        "ICircuitValidator": {
+          "0.8.16+commit.07a7930e.Linux.gcc": "ICircuitValidator.sol/ICircuitValidator.json"
+        }
+      }
+    },
+    "src/IZKPVerifier.sol": {
+      "lastModificationDate": 1667681446224,
+      "contentHash": "91557bf96d7f6adc7ab6194d674608b1",
+      "sourceName": "src/IZKPVerifier.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/ICircuitValidator.sol"
+      ],
+      "versionRequirement": "^0.8.9",
+      "artifacts": {
+        "IZKPVerifier": {
+          "0.8.16+commit.07a7930e.Linux.gcc": "IZKPVerifier.sol/IZKPVerifier.json"
+        }
+      }
+    },
+    "src/Ownable.sol": {
+      "lastModificationDate": 1667681685630,
+      "contentHash": "83cae99bb02c3a253fa8faf7097050e5",
+      "sourceName": "src/Ownable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/Context.sol"
+      ],
+      "versionRequirement": "^0.8.9",
+      "artifacts": {
+        "Ownable": {
+          "0.8.16+commit.07a7930e.Linux.gcc": "Ownable.sol/Ownable.json"
+        }
+      }
+    },
+    "src/ZKPVerifier.sol": {
+      "lastModificationDate": 1667681624158,
+      "contentHash": "f1d37d4ac9235bbfeb6efaf8c52b278b",
+      "sourceName": "src/ZKPVerifier.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/Context.sol",
+        "src/ICircuitValidator.sol",
+        "src/IZKPVerifier.sol",
+        "src/Ownable.sol"
+      ],
+      "versionRequirement": "^0.8.9",
+      "artifacts": {
+        "ZKPVerifier": {
+          "0.8.16+commit.07a7930e.Linux.gcc": "ZKPVerifier.sol/ZKPVerifier.json"
+        }
+      }
+    },
+    "src/worldcoin/ByteHasher.sol": {
       "lastModificationDate": 1667586826745,
       "contentHash": "dd971b957017ee7d0a8965821b96ec20",
-      "sourceName": "src/ByteHasher.sol",
+      "sourceName": "src/worldcoin/ByteHasher.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -714,10 +1053,10 @@
         }
       }
     },
-    "src/Contract.sol": {
-      "lastModificationDate": 1667668137358,
-      "contentHash": "3fc04eeeb465edf619a99cbbb024fd1f",
-      "sourceName": "src/Contract.sol",
+    "src/worldcoin/Contract.sol": {
+      "lastModificationDate": 1667669478453,
+      "contentHash": "bafe8cc3aa5edbeb460b41ac7668b4ef",
+      "sourceName": "src/worldcoin/Contract.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -747,8 +1086,8 @@
         }
       },
       "imports": [
-        "src/ByteHasher.sol",
-        "src/IWorldID.sol"
+        "src/worldcoin/ByteHasher.sol",
+        "src/worldcoin/IWorldID.sol"
       ],
       "versionRequirement": "^0.8.9",
       "artifacts": {
@@ -757,10 +1096,10 @@
         }
       }
     },
-    "src/IWorldID.sol": {
+    "src/worldcoin/IWorldID.sol": {
       "lastModificationDate": 1667586808429,
       "contentHash": "a2afb67c8f9cd6206bf5e03a5f0adc55",
-      "sourceName": "src/IWorldID.sol",
+      "sourceName": "src/worldcoin/IWorldID.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {

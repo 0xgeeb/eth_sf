@@ -1,0 +1,976 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint64",
+          "name": "requestId",
+          "type": "uint64"
+        }
+      ],
+      "name": "getZKPRequest",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "schema",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "slotIndex",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "operator",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "value",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "string",
+              "name": "circuitId",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct ICircuitValidator.CircuitQuery",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint64",
+          "name": "requestId",
+          "type": "uint64"
+        },
+        {
+          "internalType": "contract ICircuitValidator",
+          "name": "validator",
+          "type": "address"
+        },
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "schema",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "slotIndex",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "operator",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "value",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "string",
+              "name": "circuitId",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct ICircuitValidator.CircuitQuery",
+          "name": "query",
+          "type": "tuple"
+        }
+      ],
+      "name": "setZKPRequest",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint64",
+          "name": "requestId",
+          "type": "uint64"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "inputs",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "uint256[2]",
+          "name": "a",
+          "type": "uint256[2]"
+        },
+        {
+          "internalType": "uint256[2][2]",
+          "name": "b",
+          "type": "uint256[2][2]"
+        },
+        {
+          "internalType": "uint256[2]",
+          "name": "c",
+          "type": "uint256[2]"
+        }
+      ],
+      "name": "submitZKPResponse",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "getZKPRequest(uint64)": "c76d0845",
+    "setZKPRequest(uint64,address,(uint256,uint256,uint256,uint256[],string))": "fee207e6",
+    "submitZKPResponse(uint64,uint256[],uint256[2],uint256[2][2],uint256[2])": "b68967e2"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.16+commit.07a7930e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint64\",\"name\":\"requestId\",\"type\":\"uint64\"}],\"name\":\"getZKPRequest\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"schema\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"slotIndex\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"operator\",\"type\":\"uint256\"},{\"internalType\":\"uint256[]\",\"name\":\"value\",\"type\":\"uint256[]\"},{\"internalType\":\"string\",\"name\":\"circuitId\",\"type\":\"string\"}],\"internalType\":\"struct ICircuitValidator.CircuitQuery\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint64\",\"name\":\"requestId\",\"type\":\"uint64\"},{\"internalType\":\"contract ICircuitValidator\",\"name\":\"validator\",\"type\":\"address\"},{\"components\":[{\"internalType\":\"uint256\",\"name\":\"schema\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"slotIndex\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"operator\",\"type\":\"uint256\"},{\"internalType\":\"uint256[]\",\"name\":\"value\",\"type\":\"uint256[]\"},{\"internalType\":\"string\",\"name\":\"circuitId\",\"type\":\"string\"}],\"internalType\":\"struct ICircuitValidator.CircuitQuery\",\"name\":\"query\",\"type\":\"tuple\"}],\"name\":\"setZKPRequest\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint64\",\"name\":\"requestId\",\"type\":\"uint64\"},{\"internalType\":\"uint256[]\",\"name\":\"inputs\",\"type\":\"uint256[]\"},{\"internalType\":\"uint256[2]\",\"name\":\"a\",\"type\":\"uint256[2]\"},{\"internalType\":\"uint256[2][2]\",\"name\":\"b\",\"type\":\"uint256[2][2]\"},{\"internalType\":\"uint256[2]\",\"name\":\"c\",\"type\":\"uint256[2]\"}],\"name\":\"submitZKPResponse\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/IZKPVerifier.sol\":\"IZKPVerifier\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"src/ICircuitValidator.sol\":{\"keccak256\":\"0x4797a01334cc903dea4f8fff0958c67036dec7c938e2f615206c1b75cb2883a9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f09acc807fb2c1a6004086de045d921f7731b7c57ffc62a53094a25d43cd77d4\",\"dweb:/ipfs/QmfMTu1CrvvAMNKYGhhg7Txj1LpaeVHDfT2XrDzhuw6ZmL\"]},\"src/IZKPVerifier.sol\":{\"keccak256\":\"0xf5d7df1fb74c73eb8a4857d700c21b7de3f4113bb2a180a0a8552107f2248a85\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ce50ba3d4e9f8c5aa96246b8be606da33cce7aa943c60a1092b364ed5d64c151\",\"dweb:/ipfs/QmagqQZqC2wdvuCpGw1ZEn6jG9J8VeiR2MFk2tzQ1ELDmv\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.16+commit.07a7930e"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "uint64",
+              "name": "requestId",
+              "type": "uint64"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "getZKPRequest",
+          "outputs": [
+            {
+              "internalType": "struct ICircuitValidator.CircuitQuery",
+              "name": "",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "schema",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "slotIndex",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "operator",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256[]",
+                  "name": "value",
+                  "type": "uint256[]"
+                },
+                {
+                  "internalType": "string",
+                  "name": "circuitId",
+                  "type": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint64",
+              "name": "requestId",
+              "type": "uint64"
+            },
+            {
+              "internalType": "contract ICircuitValidator",
+              "name": "validator",
+              "type": "address"
+            },
+            {
+              "internalType": "struct ICircuitValidator.CircuitQuery",
+              "name": "query",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "schema",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "slotIndex",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "operator",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256[]",
+                  "name": "value",
+                  "type": "uint256[]"
+                },
+                {
+                  "internalType": "string",
+                  "name": "circuitId",
+                  "type": "string"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "setZKPRequest",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint64",
+              "name": "requestId",
+              "type": "uint64"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "inputs",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "uint256[2]",
+              "name": "a",
+              "type": "uint256[2]"
+            },
+            {
+              "internalType": "uint256[2][2]",
+              "name": "b",
+              "type": "uint256[2][2]"
+            },
+            {
+              "internalType": "uint256[2]",
+              "name": "c",
+              "type": "uint256[2]"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "submitZKPResponse",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/IZKPVerifier.sol": "IZKPVerifier"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/ICircuitValidator.sol": {
+        "keccak256": "0x4797a01334cc903dea4f8fff0958c67036dec7c938e2f615206c1b75cb2883a9",
+        "urls": [
+          "bzz-raw://f09acc807fb2c1a6004086de045d921f7731b7c57ffc62a53094a25d43cd77d4",
+          "dweb:/ipfs/QmfMTu1CrvvAMNKYGhhg7Txj1LpaeVHDfT2XrDzhuw6ZmL"
+        ],
+        "license": "MIT"
+      },
+      "src/IZKPVerifier.sol": {
+        "keccak256": "0xf5d7df1fb74c73eb8a4857d700c21b7de3f4113bb2a180a0a8552107f2248a85",
+        "urls": [
+          "bzz-raw://ce50ba3d4e9f8c5aa96246b8be606da33cce7aa943c60a1092b364ed5d64c151",
+          "dweb:/ipfs/QmagqQZqC2wdvuCpGw1ZEn6jG9J8VeiR2MFk2tzQ1ELDmv"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/IZKPVerifier.sol",
+    "id": 838,
+    "exportedSymbols": {
+      "ICircuitValidator": [
+        788
+      ],
+      "IZKPVerifier": [
+        837
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:542:4",
+    "nodes": [
+      {
+        "id": 790,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:4",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".9"
+        ]
+      },
+      {
+        "id": 791,
+        "nodeType": "ImportDirective",
+        "src": "57:33:4",
+        "nodes": [],
+        "absolutePath": "src/ICircuitValidator.sol",
+        "file": "./ICircuitValidator.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 838,
+        "sourceUnit": 789,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 837,
+        "nodeType": "ContractDefinition",
+        "src": "92:482:4",
+        "nodes": [
+          {
+            "id": 815,
+            "nodeType": "FunctionDefinition",
+            "src": "119:184:4",
+            "nodes": [],
+            "functionSelector": "b68967e2",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "submitZKPResponse",
+            "nameLocation": "128:17:4",
+            "parameters": {
+              "id": 811,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 793,
+                  "mutability": "mutable",
+                  "name": "requestId",
+                  "nameLocation": "158:9:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 815,
+                  "src": "151:16:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  },
+                  "typeName": {
+                    "id": 792,
+                    "name": "uint64",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "151:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 796,
+                  "mutability": "mutable",
+                  "name": "inputs",
+                  "nameLocation": "190:6:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 815,
+                  "src": "173:23:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 794,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "173:7:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 795,
+                    "nodeType": "ArrayTypeName",
+                    "src": "173:9:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 800,
+                  "mutability": "mutable",
+                  "name": "a",
+                  "nameLocation": "220:1:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 815,
+                  "src": "202:19:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$2_memory_ptr",
+                    "typeString": "uint256[2]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 797,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "202:7:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 799,
+                    "length": {
+                      "hexValue": "32",
+                      "id": 798,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "210:1:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_2_by_1",
+                        "typeString": "int_const 2"
+                      },
+                      "value": "2"
+                    },
+                    "nodeType": "ArrayTypeName",
+                    "src": "202:10:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$2_storage_ptr",
+                      "typeString": "uint256[2]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 806,
+                  "mutability": "mutable",
+                  "name": "b",
+                  "nameLocation": "248:1:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 815,
+                  "src": "227:22:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_array$_t_uint256_$2_memory_ptr_$2_memory_ptr",
+                    "typeString": "uint256[2][2]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "baseType": {
+                        "id": 801,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "227:7:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "id": 803,
+                      "length": {
+                        "hexValue": "32",
+                        "id": 802,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "235:1:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_2_by_1",
+                          "typeString": "int_const 2"
+                        },
+                        "value": "2"
+                      },
+                      "nodeType": "ArrayTypeName",
+                      "src": "227:10:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_uint256_$2_storage_ptr",
+                        "typeString": "uint256[2]"
+                      }
+                    },
+                    "id": 805,
+                    "length": {
+                      "hexValue": "32",
+                      "id": 804,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "238:1:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_2_by_1",
+                        "typeString": "int_const 2"
+                      },
+                      "value": "2"
+                    },
+                    "nodeType": "ArrayTypeName",
+                    "src": "227:13:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_array$_t_uint256_$2_storage_$2_storage_ptr",
+                      "typeString": "uint256[2][2]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 810,
+                  "mutability": "mutable",
+                  "name": "c",
+                  "nameLocation": "273:1:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 815,
+                  "src": "255:19:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$2_memory_ptr",
+                    "typeString": "uint256[2]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 807,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "255:7:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 809,
+                    "length": {
+                      "hexValue": "32",
+                      "id": 808,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "263:1:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_2_by_1",
+                        "typeString": "int_const 2"
+                      },
+                      "value": "2"
+                    },
+                    "nodeType": "ArrayTypeName",
+                    "src": "255:10:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$2_storage_ptr",
+                      "typeString": "uint256[2]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "145:133:4"
+            },
+            "returnParameters": {
+              "id": 814,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 813,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 815,
+                  "src": "297:4:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 812,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "297:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "296:6:4"
+            },
+            "scope": 837,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 828,
+            "nodeType": "FunctionDefinition",
+            "src": "307:155:4",
+            "nodes": [],
+            "functionSelector": "fee207e6",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setZKPRequest",
+            "nameLocation": "316:13:4",
+            "parameters": {
+              "id": 824,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 817,
+                  "mutability": "mutable",
+                  "name": "requestId",
+                  "nameLocation": "342:9:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 828,
+                  "src": "335:16:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  },
+                  "typeName": {
+                    "id": 816,
+                    "name": "uint64",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "335:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 820,
+                  "mutability": "mutable",
+                  "name": "validator",
+                  "nameLocation": "375:9:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 828,
+                  "src": "357:27:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ICircuitValidator_$788",
+                    "typeString": "contract ICircuitValidator"
+                  },
+                  "typeName": {
+                    "id": 819,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 818,
+                      "name": "ICircuitValidator",
+                      "nameLocations": [
+                        "357:17:4"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 788,
+                      "src": "357:17:4"
+                    },
+                    "referencedDeclaration": 788,
+                    "src": "357:17:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ICircuitValidator_$788",
+                      "typeString": "contract ICircuitValidator"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 823,
+                  "mutability": "mutable",
+                  "name": "query",
+                  "nameLocation": "428:5:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 828,
+                  "src": "390:43:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_CircuitQuery_$747_memory_ptr",
+                    "typeString": "struct ICircuitValidator.CircuitQuery"
+                  },
+                  "typeName": {
+                    "id": 822,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 821,
+                      "name": "ICircuitValidator.CircuitQuery",
+                      "nameLocations": [
+                        "390:17:4",
+                        "408:12:4"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 747,
+                      "src": "390:30:4"
+                    },
+                    "referencedDeclaration": 747,
+                    "src": "390:30:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_CircuitQuery_$747_storage_ptr",
+                      "typeString": "struct ICircuitValidator.CircuitQuery"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "329:108:4"
+            },
+            "returnParameters": {
+              "id": 827,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 826,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 828,
+                  "src": "456:4:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 825,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "456:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "455:6:4"
+            },
+            "scope": 837,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 836,
+            "nodeType": "FunctionDefinition",
+            "src": "466:106:4",
+            "nodes": [],
+            "functionSelector": "c76d0845",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getZKPRequest",
+            "nameLocation": "475:13:4",
+            "parameters": {
+              "id": 831,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 830,
+                  "mutability": "mutable",
+                  "name": "requestId",
+                  "nameLocation": "496:9:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 836,
+                  "src": "489:16:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  },
+                  "typeName": {
+                    "id": 829,
+                    "name": "uint64",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "489:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "488:18:4"
+            },
+            "returnParameters": {
+              "id": 835,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 834,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 836,
+                  "src": "533:37:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_CircuitQuery_$747_memory_ptr",
+                    "typeString": "struct ICircuitValidator.CircuitQuery"
+                  },
+                  "typeName": {
+                    "id": 833,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 832,
+                      "name": "ICircuitValidator.CircuitQuery",
+                      "nameLocations": [
+                        "533:17:4",
+                        "551:12:4"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 747,
+                      "src": "533:30:4"
+                    },
+                    "referencedDeclaration": 747,
+                    "src": "533:30:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_CircuitQuery_$747_storage_ptr",
+                      "typeString": "struct ICircuitValidator.CircuitQuery"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "532:39:4"
+            },
+            "scope": 837,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IZKPVerifier",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          837
+        ],
+        "name": "IZKPVerifier",
+        "nameLocation": "102:12:4",
+        "scope": 838,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 4
+}
