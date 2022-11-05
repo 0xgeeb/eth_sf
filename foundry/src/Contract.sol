@@ -37,7 +37,7 @@ contract Contract {
   /// @param proof The zero knowledge proof that demostrates the claimer is registered with World ID, returned by the SDK.
   /// @dev Feel free to rename this method however you want! We've used `claim`, `verify` or `execute` in the past.
   function verifyAndExecute(
-    address input,
+    string calldata input,
     uint256 root,
     uint256 nullifierHash,
     uint256[8] calldata proof

@@ -14,8 +14,15 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
-
 console.log("NODE_ENV is", process.env.NODE_ENV);
+
+
+
+
+
+
+
+
  
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "../build")));

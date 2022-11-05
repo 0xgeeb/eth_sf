@@ -19,9 +19,9 @@
     {
       "inputs": [
         {
-          "internalType": "address",
+          "internalType": "uint256",
           "name": "input",
-          "type": "address"
+          "type": "uint256"
         },
         {
           "internalType": "uint256",
@@ -46,13 +46,13 @@
     }
   ],
   "bytecode": {
-    "object": "0x7f7769645f73746167696e675f6263636565383463313161313066656531653366610100526b63666231616134653463666160a01b61012052602c60e090815261012c6040526100599061009d602090811b61019817901c565b60a052600160c05234801561006d57600080fd5b5060405161042438038061042483398101604081905261008c916100d2565b6001600160a01b0316608052610131565b60006008826040516020016100b29190610102565b60408051601f198184030181529190528051602090910120901c92915050565b6000602082840312156100e457600080fd5b81516001600160a01b03811681146100fb57600080fd5b9392505050565b6000825160005b818110156101235760208186018101518583015201610109565b506000920191825250919050565b60805160a05160c0516102c661015e600039600060a70152600061010901526000607701526102c66000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c8063e9b7055314610030575b600080fd5b61004361003e3660046101cd565b610045565b005b60008281526020819052604090205460ff161561007557604051632ec8265960e11b815260040160405180910390fd5b7f00000000000000000000000000000000000000000000000000000000000000006001600160a01b0316633bc778e3847f0000000000000000000000000000000000000000000000000000000000000000610106886040516020016100f2919060609190911b6bffffffffffffffffffffffff1916815260140190565b604051602081830303815290604052610198565b867f0000000000000000000000000000000000000000000000000000000000000000876040518763ffffffff1660e01b815260040161014a96959493929190610229565b60006040518083038186803b15801561016257600080fd5b505afa158015610176573d6000803e3d6000fd5b50505060009283525050602081905260409020805460ff191660011790555050565b60006008826040516020016101ad9190610261565b60408051601f198184030181529190528051602090910120901c92915050565b6000806000806101608086880312156101e557600080fd5b85356001600160a01b03811681146101fc57600080fd5b9450602086013593506040860135925080860187101561021b57600080fd5b509295919450926060019150565b60006101a0820190508782528660208301528560408301528460608301528360808301526101008360a0840137979650505050505050565b6000825160005b818110156102825760208186018101518583015201610268565b50600092019182525091905056fea2646970667358221220378b24be956a2dda19b7844fba8ead8bc98aa5788d81ce248d2a730dbd81b56164736f6c63430008100033",
+    "object": "0x7f7769645f73746167696e675f6263636565383463313161313066656531653366610100526b63666231616134653463666160a01b61012052602c60e090815261012c6040526100599061009d602090811b61018217901c565b60a052600160c05234801561006d57600080fd5b506040516103f83803806103f883398101604081905261008c916100d2565b6001600160a01b0316608052610131565b60006008826040516020016100b29190610102565b60408051601f198184030181529190528051602090910120901c92915050565b6000602082840312156100e457600080fd5b81516001600160a01b03811681146100fb57600080fd5b9392505050565b6000825160005b818110156101235760208186018101518583015201610109565b506000920191825250919050565b60805160a05160c05161029b61015d600039600060a70152600060f3015260006077015261029b6000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c80636d90641014610030575b600080fd5b61004361003e3660046101b7565b610045565b005b60008281526020819052604090205460ff161561007557604051632ec8265960e11b815260040160405180910390fd5b7f00000000000000000000000000000000000000000000000000000000000000006001600160a01b0316633bc778e3847f00000000000000000000000000000000000000000000000000000000000000006100f0886040516020016100dc91815260200190565b604051602081830303815290604052610182565b867f0000000000000000000000000000000000000000000000000000000000000000876040518763ffffffff1660e01b8152600401610134969594939291906101fe565b60006040518083038186803b15801561014c57600080fd5b505afa158015610160573d6000803e3d6000fd5b50505060009283525050602081905260409020805460ff191660011790555050565b60006008826040516020016101979190610236565b60408051601f198184030181529190528051602090910120901c92915050565b6000806000806101608086880312156101cf57600080fd5b8535945060208601359350604086013592508681870111156101f057600080fd5b509295919450926060019150565b60006101a0820190508782528660208301528560408301528460608301528360808301526101008360a0840137979650505050505050565b6000825160005b81811015610257576020818601810151858301520161023d565b50600092019182525091905056fea2646970667358221220cf2c21d3dcbb8d0b476aec797e88d7e23844291ac6dc6da1d10185c0e797c7ea64736f6c63430008100033",
     "sourceMap": "228:34:3:-:0;717:64:1;216:47:3;-1:-1:-1;;;279:12:3;272:36;717:64:1;144:2248;717:64;;;324:12:3;-1:-1:-1;717:64:1;:78;;:76;-1:-1:-1;717:76:1;;;;;:78;;:::i;:::-;679:116;;873:1;836:38;;1096:60;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;;;1133:18:1;;;144:2248;;301:145:0;365:7;438:1;426:5;409:23;;;;;;;;:::i;:::-;;;;-1:-1:-1;;409:23:0;;;;;;;;;399:34;;409:23;399:34;;;;391:48;;;301:145;-1:-1:-1;;301:145:0:o;347:306:3:-;433:6;486:2;474:9;465:7;461:23;457:32;454:52;;;502:1;499;492:12;454:52;528:16;;-1:-1:-1;;;;;573:31:3;;563:42;;553:70;;619:1;616;609:12;553:70;642:5;347:306;-1:-1:-1;;;347:306:3:o;658:412::-;787:3;825:6;819:13;850:1;860:129;874:6;871:1;868:13;860:129;;;972:4;956:14;;;952:25;;946:32;933:11;;;926:53;889:12;860:129;;;-1:-1:-1;1044:1:3;1008:16;;1033:13;;;-1:-1:-1;1008:16:3;658:412;-1:-1:-1;658:412:3:o;:::-;144:2248:1;;;;;;;;;;;;;;;;;;;;;;;;",
     "linkReferences": {}
   },
   "deployedBytecode": {
-    "object": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c8063e9b7055314610030575b600080fd5b61004361003e3660046101cd565b610045565b005b60008281526020819052604090205460ff161561007557604051632ec8265960e11b815260040160405180910390fd5b7f00000000000000000000000000000000000000000000000000000000000000006001600160a01b0316633bc778e3847f0000000000000000000000000000000000000000000000000000000000000000610106886040516020016100f2919060609190911b6bffffffffffffffffffffffff1916815260140190565b604051602081830303815290604052610198565b867f0000000000000000000000000000000000000000000000000000000000000000876040518763ffffffff1660e01b815260040161014a96959493929190610229565b60006040518083038186803b15801561016257600080fd5b505afa158015610176573d6000803e3d6000fd5b50505060009283525050602081905260409020805460ff191660011790555050565b60006008826040516020016101ad9190610261565b60408051601f198184030181529190528051602090910120901c92915050565b6000806000806101608086880312156101e557600080fd5b85356001600160a01b03811681146101fc57600080fd5b9450602086013593506040860135925080860187101561021b57600080fd5b509295919450926060019150565b60006101a0820190508782528660208301528560408301528460608301528360808301526101008360a0840137979650505050505050565b6000825160005b818110156102825760208186018101518583015201610268565b50600092019182525091905056fea2646970667358221220378b24be956a2dda19b7844fba8ead8bc98aa5788d81ce248d2a730dbd81b56164736f6c63430008100033",
-    "sourceMap": "144:2248:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1660:730;;;;;;:::i;:::-;;:::i;:::-;;;1865:15;:30;;;;;;;;;;;;;1861:61;;;1904:18;;-1:-1:-1;;;1904:18:1;;;;;;;;;;;1861:61;2027:7;-1:-1:-1;;;;;2027:19:1;;2054:4;2066:7;2081:37;2098:5;2081:23;;;;;;;751:2:3;747:15;;;;-1:-1:-1;;743:53:3;731:66;;822:2;813:12;;602:229;2081:23:1;;;;;;;;;;;;;:35;:37::i;:::-;2126:13;2147:8;2163:5;2027:147;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;2274:15:1;:30;;;-1:-1:-1;;2274:30:1;;;;;;;:37;;-1:-1:-1;;2274:37:1;2307:4;2274:37;;;-1:-1:-1;;1660:730:1:o;301:145:0:-;365:7;438:1;426:5;409:23;;;;;;;;:::i;:::-;;;;-1:-1:-1;;409:23:0;;;;;;;;;399:34;;409:23;399:34;;;;391:48;;;301:145;-1:-1:-1;;301:145:0:o;14:583:3:-;125:6;133;141;149;180:3;224:2;212:9;203:7;199:23;195:32;192:52;;;240:1;237;230:12;192:52;266:23;;-1:-1:-1;;;;;318:31:3;;308:42;;298:70;;364:1;361;354:12;298:70;387:5;-1:-1:-1;439:2:3;424:18;;411:32;;-1:-1:-1;490:2:3;475:18;;462:32;;-1:-1:-1;509:18:3;;;506:31;-1:-1:-1;503:51:3;;;550:1;547;540:12;503:51;-1:-1:-1;14:583:3;;;;-1:-1:-1;14:583:3;588:2;573:18;;-1:-1:-1;14:583:3:o;836:597::-;1116:4;1158:3;1147:9;1143:19;1135:27;;1189:6;1178:9;1171:25;1232:6;1227:2;1216:9;1212:18;1205:34;1275:6;1270:2;1259:9;1255:18;1248:34;1318:6;1313:2;1302:9;1298:18;1291:34;1362:6;1356:3;1345:9;1341:19;1334:35;1420:6;1412;1406:3;1395:9;1391:19;1378:49;836:597;;;;;;;;;:::o;1438:412::-;1567:3;1605:6;1599:13;1630:1;1640:129;1654:6;1651:1;1648:13;1640:129;;;1752:4;1736:14;;;1732:25;;1726:32;1713:11;;;1706:53;1669:12;1640:129;;;-1:-1:-1;1824:1:3;1788:16;;1813:13;;;-1:-1:-1;1788:16:3;1438:412;-1:-1:-1;1438:412:3:o",
+    "object": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c80636d90641014610030575b600080fd5b61004361003e3660046101b7565b610045565b005b60008281526020819052604090205460ff161561007557604051632ec8265960e11b815260040160405180910390fd5b7f00000000000000000000000000000000000000000000000000000000000000006001600160a01b0316633bc778e3847f00000000000000000000000000000000000000000000000000000000000000006100f0886040516020016100dc91815260200190565b604051602081830303815290604052610182565b867f0000000000000000000000000000000000000000000000000000000000000000876040518763ffffffff1660e01b8152600401610134969594939291906101fe565b60006040518083038186803b15801561014c57600080fd5b505afa158015610160573d6000803e3d6000fd5b50505060009283525050602081905260409020805460ff191660011790555050565b60006008826040516020016101979190610236565b60408051601f198184030181529190528051602090910120901c92915050565b6000806000806101608086880312156101cf57600080fd5b8535945060208601359350604086013592508681870111156101f057600080fd5b509295919450926060019150565b60006101a0820190508782528660208301528560408301528460608301528360808301526101008360a0840137979650505050505050565b6000825160005b81811015610257576020818601810151858301520161023d565b50600092019182525091905056fea2646970667358221220cf2c21d3dcbb8d0b476aec797e88d7e23844291ac6dc6da1d10185c0e797c7ea64736f6c63430008100033",
+    "sourceMap": "144:2248:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1660:730;;;;;;:::i;:::-;;:::i;:::-;;;1865:15;:30;;;;;;;;;;;;;1861:61;;;1904:18;;-1:-1:-1;;;1904:18:1;;;;;;;;;;;1861:61;2027:7;-1:-1:-1;;;;;2027:19:1;;2054:4;2066:7;2081:37;2098:5;2081:23;;;;;;625:19:3;;669:2;660:12;;496:182;2081:23:1;;;;;;;;;;;;;:35;:37::i;:::-;2126:13;2147:8;2163:5;2027:147;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;2274:15:1;:30;;;-1:-1:-1;;2274:30:1;;;;;;;:37;;-1:-1:-1;;2274:37:1;2307:4;2274:37;;;-1:-1:-1;;1660:730:1:o;301:145:0:-;365:7;438:1;426:5;409:23;;;;;;;;:::i;:::-;;;;-1:-1:-1;;409:23:0;;;;;;;;;399:34;;409:23;399:34;;;;391:48;;;301:145;-1:-1:-1;;301:145:0:o;14:477:3:-;125:6;133;141;149;180:3;224:2;212:9;203:7;199:23;195:32;192:52;;;240:1;237;230:12;192:52;276:9;263:23;253:33;;333:2;322:9;318:18;305:32;295:42;;384:2;373:9;369:18;356:32;346:42;;423:7;418:2;407:9;403:18;400:31;397:51;;;444:1;441;434:12;397:51;-1:-1:-1;14:477:3;;;;-1:-1:-1;14:477:3;482:2;467:18;;-1:-1:-1;14:477:3:o;683:597::-;963:4;1005:3;994:9;990:19;982:27;;1036:6;1025:9;1018:25;1079:6;1074:2;1063:9;1059:18;1052:34;1122:6;1117:2;1106:9;1102:18;1095:34;1165:6;1160:2;1149:9;1145:18;1138:34;1209:6;1203:3;1192:9;1188:19;1181:35;1267:6;1259;1253:3;1242:9;1238:19;1225:49;683:597;;;;;;;;;:::o;1285:412::-;1414:3;1452:6;1446:13;1477:1;1487:129;1501:6;1498:1;1495:13;1487:129;;;1599:4;1583:14;;;1579:25;;1573:32;1560:11;;;1553:53;1516:12;1487:129;;;-1:-1:-1;1671:1:3;1635:16;;1660:13;;;-1:-1:-1;1635:16:3;1285:412;-1:-1:-1;1285:412:3:o",
     "linkReferences": {},
     "immutableReferences": {
       "39": [
@@ -63,7 +63,7 @@
       ],
       "48": [
         {
-          "start": 265,
+          "start": 243,
           "length": 32
         }
       ],
@@ -76,9 +76,9 @@
     }
   },
   "methodIdentifiers": {
-    "verifyAndExecute(address,uint256,uint256,uint256[8])": "e9b70553"
+    "verifyAndExecute(uint256,uint256,uint256,uint256[8])": "6d906410"
   },
-  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.16+commit.07a7930e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract IWorldID\",\"name\":\"_worldId\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"InvalidNullifier\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"input\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"root\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"nullifierHash\",\"type\":\"uint256\"},{\"internalType\":\"uint256[8]\",\"name\":\"proof\",\"type\":\"uint256[8]\"}],\"name\":\"verifyAndExecute\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"constructor\":{\"params\":{\"_worldId\":\"The WorldID instance that will verify the proofs\"}},\"verifyAndExecute(address,uint256,uint256,uint256[8])\":{\"details\":\"Feel free to rename this method however you want! We've used `claim`, `verify` or `execute` in the past.\",\"params\":{\"input\":\"User's input, used as the signal. Could be something else! (see README)\",\"nullifierHash\":\"The nullifier for this proof, preventing double signaling, returned by the SDK.\",\"proof\":\"The zero knowledge proof that demostrates the claimer is registered with World ID, returned by the SDK.\",\"root\":\"The of the Merkle tree, returned by the SDK.\"}}},\"stateVariables\":{\"actionId\":{\"details\":\"The application's action ID\"},\"groupId\":{\"details\":\"The WorldID group ID (1)\"},\"nullifierHashes\":{\"details\":\"Whether a nullifier hash has been used already. Used to prevent double-signaling\"},\"worldId\":{\"details\":\"The WorldID instance that will be used for verifying proofs\"}},\"version\":1},\"userdoc\":{\"errors\":{\"InvalidNullifier()\":[{\"notice\":\"Thrown when attempting to reuse a nullifier\"}]},\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/Contract.sol\":\"Contract\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"src/ByteHasher.sol\":{\"keccak256\":\"0x8f7efea43917a34ca391c8fe67c77277d53dadf7f2163a85caa88c148edebb91\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://099a2236f60aa99228b6fb18ab4484d862ebac72fe765e45e0f527b8415c9a40\",\"dweb:/ipfs/QmPoBGewpGCMagaoCQdwsaGPXs4UrqYWLzbLNtaNRpjLKB\"]},\"src/Contract.sol\":{\"keccak256\":\"0x35f5787895b45cb844d2254a9e5d7c4356a026e2636283f8a4934399f779f094\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://02bb703dee3086c1b54352e38715252bf60cf58a492a33752bd7e532e6a63bf2\",\"dweb:/ipfs/QmSUD43aHYNrEWRS8juWUSP4xZSYws193ptp3hX4AEFE4T\"]},\"src/IWorldID.sol\":{\"keccak256\":\"0xd2f210c611e83f7f547dd191be3ff4d5e9d9a093d4f9fd9b945d52ef7564b335\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://016d458239c46b282b308078bdbb575537983583b66f14a9253cf64282f30061\",\"dweb:/ipfs/Qmcw3n6671Dc2QLGXY3s18nZjcUCBN64NfL8YnUa4bF5it\"]}},\"version\":1}",
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.16+commit.07a7930e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract IWorldID\",\"name\":\"_worldId\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"InvalidNullifier\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"input\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"root\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"nullifierHash\",\"type\":\"uint256\"},{\"internalType\":\"uint256[8]\",\"name\":\"proof\",\"type\":\"uint256[8]\"}],\"name\":\"verifyAndExecute\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"constructor\":{\"params\":{\"_worldId\":\"The WorldID instance that will verify the proofs\"}},\"verifyAndExecute(uint256,uint256,uint256,uint256[8])\":{\"details\":\"Feel free to rename this method however you want! We've used `claim`, `verify` or `execute` in the past.\",\"params\":{\"input\":\"User's input, used as the signal. Could be something else! (see README)\",\"nullifierHash\":\"The nullifier for this proof, preventing double signaling, returned by the SDK.\",\"proof\":\"The zero knowledge proof that demostrates the claimer is registered with World ID, returned by the SDK.\",\"root\":\"The of the Merkle tree, returned by the SDK.\"}}},\"stateVariables\":{\"actionId\":{\"details\":\"The application's action ID\"},\"groupId\":{\"details\":\"The WorldID group ID (1)\"},\"nullifierHashes\":{\"details\":\"Whether a nullifier hash has been used already. Used to prevent double-signaling\"},\"worldId\":{\"details\":\"The WorldID instance that will be used for verifying proofs\"}},\"version\":1},\"userdoc\":{\"errors\":{\"InvalidNullifier()\":[{\"notice\":\"Thrown when attempting to reuse a nullifier\"}]},\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/Contract.sol\":\"Contract\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"src/ByteHasher.sol\":{\"keccak256\":\"0x8f7efea43917a34ca391c8fe67c77277d53dadf7f2163a85caa88c148edebb91\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://099a2236f60aa99228b6fb18ab4484d862ebac72fe765e45e0f527b8415c9a40\",\"dweb:/ipfs/QmPoBGewpGCMagaoCQdwsaGPXs4UrqYWLzbLNtaNRpjLKB\"]},\"src/Contract.sol\":{\"keccak256\":\"0x14c71592e577807e5b17073f602491d3c2b375313214658d1251257f53f61a7f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f7167de6aa2bb23c776e1208ef4c7b05a97ba5edfb66bfc45ec8e4e3378a3cbc\",\"dweb:/ipfs/QmcffuzoK1CwL2TJ8bNXdSHVGmaxD33vzCeyD1hcqeWnTE\"]},\"src/IWorldID.sol\":{\"keccak256\":\"0xd2f210c611e83f7f547dd191be3ff4d5e9d9a093d4f9fd9b945d52ef7564b335\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://016d458239c46b282b308078bdbb575537983583b66f14a9253cf64282f30061\",\"dweb:/ipfs/Qmcw3n6671Dc2QLGXY3s18nZjcUCBN64NfL8YnUa4bF5it\"]}},\"version\":1}",
   "metadata": {
     "compiler": {
       "version": "0.8.16+commit.07a7930e"
@@ -105,9 +105,9 @@
         {
           "inputs": [
             {
-              "internalType": "address",
+              "internalType": "uint256",
               "name": "input",
-              "type": "address"
+              "type": "uint256"
             },
             {
               "internalType": "uint256",
@@ -138,7 +138,7 @@
               "_worldId": "The WorldID instance that will verify the proofs"
             }
           },
-          "verifyAndExecute(address,uint256,uint256,uint256[8])": {
+          "verifyAndExecute(uint256,uint256,uint256,uint256[8])": {
             "details": "Feel free to rename this method however you want! We've used `claim`, `verify` or `execute` in the past.",
             "params": {
               "input": "User's input, used as the signal. Could be something else! (see README)",
@@ -183,10 +183,10 @@
         "license": "MIT"
       },
       "src/Contract.sol": {
-        "keccak256": "0x35f5787895b45cb844d2254a9e5d7c4356a026e2636283f8a4934399f779f094",
+        "keccak256": "0x14c71592e577807e5b17073f602491d3c2b375313214658d1251257f53f61a7f",
         "urls": [
-          "bzz-raw://02bb703dee3086c1b54352e38715252bf60cf58a492a33752bd7e532e6a63bf2",
-          "dweb:/ipfs/QmSUD43aHYNrEWRS8juWUSP4xZSYws193ptp3hX4AEFE4T"
+          "bzz-raw://f7167de6aa2bb23c776e1208ef4c7b05a97ba5edfb66bfc45ec8e4e3378a3cbc",
+          "dweb:/ipfs/QmcffuzoK1CwL2TJ8bNXdSHVGmaxD33vzCeyD1hcqeWnTE"
         ],
         "license": "MIT"
       },
@@ -871,16 +871,16 @@
                                 "referencedDeclaration": 72,
                                 "src": "2098:5:1",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_address",
-                                  "typeString": "address"
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
                                 }
                               }
                             ],
                             "expression": {
                               "argumentTypes": [
                                 {
-                                  "typeIdentifier": "t_address",
-                                  "typeString": "address"
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
                                 }
                               ],
                               "expression": {
@@ -1147,7 +1147,7 @@
               "src": "1160:497:1",
               "text": "@param input User's input, used as the signal. Could be something else! (see README)\n @param root The of the Merkle tree, returned by the SDK.\n @param nullifierHash The nullifier for this proof, preventing double signaling, returned by the SDK.\n @param proof The zero knowledge proof that demostrates the claimer is registered with World ID, returned by the SDK.\n @dev Feel free to rename this method however you want! We've used `claim`, `verify` or `execute` in the past."
             },
-            "functionSelector": "e9b70553",
+            "functionSelector": "6d906410",
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -1169,18 +1169,17 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_address",
-                    "typeString": "address"
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
                   },
                   "typeName": {
                     "id": 71,
-                    "name": "address",
+                    "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1691:7:1",
-                    "stateMutability": "nonpayable",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
                     }
                   },
                   "visibility": "internal"
