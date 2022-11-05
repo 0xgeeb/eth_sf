@@ -1,0 +1,69 @@
+{
+  "name": "worldcointest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "buildwebpack": "webpack",
+    "start": "npm run build && NODE_ENV=production npm run server",
+    "build": "react-scripts build",
+    "development": "NODE_ENV=development concurrently --kill-others \"npm run client\" \"npm run server\"",
+    "production": "npm run build && NODE_ENV=production npm run server",
+    "client": "react-scripts start",
+    "server": "node server/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.19.6",
+    "@babel/node": "^7.20.0",
+    "@babel/plugin-transform-runtime": "^7.19.6",
+    "@babel/preset-env": "^7.19.4",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/runtime": "^7.20.1",
+    "@worldcoin/id": "^0.9.2",
+    "autoprefixer": "^10.4.13",
+    "axios": "^1.1.3",
+    "babel-loader": "^9.1.0",
+    "body-parser": "^1.20.1",
+    "concurrently": "^7.5.0",
+    "cors": "^2.8.5",
+    "css-loader": "^6.7.1",
+    "dotenv": "^16.0.3",
+    "dotenv-webpack": "^8.0.1",
+    "ethers": "^5.7.2",
+    "express": "^4.18.2",
+    "html-webpack-plugin": "^5.5.0",
+    "http": "^0.0.1-security",
+    "http-proxy-middleware": "^2.0.6",
+    "mini-css-extract-plugin": "^2.6.1",
+    "path": "^0.12.7",
+    "postcss": "^8.4.18",
+    "postcss-cli": "^10.0.0",
+    "postcss-loader": "^7.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.3",
+    "react-scripts": "^5.0.1",
+    "style-loader": "^3.3.1",
+    "tailwindcss": "^3.2.1",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "type": "module",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
